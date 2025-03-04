@@ -91,9 +91,9 @@ class CameraMovement():
             cv2.addWeighted(overlay,alpha,frame,1-alpha,0,frame)
 
             x_movement, y_movement = camera_movement[frame_num]
-            frame = cv2.putText(frame, "Estimated Camera movements",(10,30), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
-            frame = cv2.putText(frame,f"Camera Movement X: {x_movement:.2f}",(10,30), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
-            frame = cv2.putText(frame,f"Camera Movement Y: {y_movement:.2f}",(10,60), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
+            frame = cv2.putText(frame, "Estimated Camera movements",(10,25), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
+            frame = cv2.putText(frame,f"Camera Movement X: {x_movement:.2f}",(10,55), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
+            frame = cv2.putText(frame,f"Camera Movement Y: {y_movement:.2f}",(10,85), cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,0),2)
 
             output_frames.append(frame) 
 

@@ -6,7 +6,7 @@ This project leverages the **YOLOv11 Large** model, fine-tuned with a dataset fr
 ## Input and Output Videos
 To demonstrate the effectiveness of the approach, an **input video** containing a football match is processed, and the results are saved in an **output video**.
 
-**Input Video:** !
+**Input Video:** https://github.com/Harshv140702/Yolo-Football-Analysis/blob/main/input_videos/08fd33_4.mp4
 
 **Output Video:** !
 

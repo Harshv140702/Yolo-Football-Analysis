@@ -6,9 +6,9 @@ This project leverages the **YOLOv11 Large** model, fine-tuned with a dataset fr
 ## Input and Output Videos
 To demonstrate the effectiveness of the approach, an **input video** containing a football match is processed, and the results are saved in an **output video**.
 
-**Input Video:** ![Input Video](input_videos/08fd33_4.mp4)
+**Input Video:** !
 
-**Output Video:** ![Output Video](output/output_video.avi)
+**Output Video:** !
 
 ## Methodology
 The detection phase employs the **YOLOv11 Large** model, which was fine-tuned using a dataset from **Roboflow** to improve accuracy in identifying players on the field. After detection, **KMeans clustering** is applied to differentiate players based on their jersey colors, allowing for team classification.

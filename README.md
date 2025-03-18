@@ -16,7 +16,7 @@ The detection phase employs the **YOLOv11 Large** model, which was fine-tuned us
 To track camera motion, **OpenCV’s Perspective Transformer** is utilized. This transformation helps in compensating for changes in camera angles and movements. Furthermore, by integrating real-world dimensions of a football field, the perspective transform is employed to estimate the speed of players. However, speed calculations are currently restricted to the **middle of the field**, leading to certain limitations.
 
 ## Observed Limitations
-One of the key challenges faced during implementation was **player misclassification** by KMeans. Specifically, **Player 19** often gets misclassified. Another major limitation is the **restriction of speed calculation to the middle of the field**, which prevents obtaining a comprehensive speed analysis across the entire playing area. Thus, several calculations are **hardcoded** for this specific imput video, reducing the flexibility and adaptability of the approach.
+One of the key challenges faced during implementation was **player misclassification** by KMeans. Specifically, **Player 19** often gets misclassified. Another major limitation is the **restriction of speed calculation to the middle of the field**, which prevents obtaining a comprehensive speed analysis across the entire playing area. Calculations such as perspective transformation have been hardcoded to this video, using empirical data for dimensions of football fields.
 
 ## Suggested Improvements
 To enhance the accuracy and robustness of the project, several improvements can be considered. Kmeans can be used with more random initializations in order to enhance accuracy. A more advanced clustering technique, such as **DBSCAN or a supervised classification model**, could improve player differentiation. Moreover, speed estimation could be refined by dynamically adapting the **field transformation** across different sections of the pitch. Finally, automating parameter adjustments would improve generalizability, making the solution applicable to multiple video inputs.
@@ -26,4 +26,11 @@ To test and run the project, execute the following command:
 ```bash
 python main.py
 ```
-Ensure that all required dependencies, including OpenCV, YOLOv11, and Scikit-learn, are properly installed.
+Ensure that all following required dependencies are installed:
+- Python 3.x
+- ultralytics
+- supervision
+- OpenCV
+- NumPy
+- Matplotlib
+- Pandas

@@ -1,7 +1,7 @@
 # Yolo-Football-Analysis
 
 ## Overview
-This project leverages the **YOLOv11 Large** model, fine-tuned with a dataset from **Roboflow**, to detect football players in a match. Once detected, players are clustered based on their **jersey colors** using **KMeans clustering**. Additionally, **camera movement** is estimated using **OpenCV's perspective transformer**, which is further utilized along with real-world football field dimensions to estimate player speed.
+This project leverages the **YOLOv11 Large** model, fine-tuned with a dataset from **Roboflow** (https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc/dataset/1), to detect football players in a match. Once detected, players are clustered based on their **jersey colors** using **KMeans clustering**. Additionally, **camera movement** is estimated using **OpenCV's perspective transformer**, which is further utilized along with real-world football field dimensions to estimate player speed.
 
 ## Input and Output Videos
 To demonstrate the effectiveness of the approach, an **input video** containing a football match is processed, and the results are saved in an **output video**.

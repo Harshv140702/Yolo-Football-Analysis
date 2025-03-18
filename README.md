@@ -8,7 +8,7 @@ To demonstrate the effectiveness of the approach, an **input video** containing 
 
 **Input Video:** https://github.com/Harshv140702/Yolo-Football-Analysis/blob/main/input_videos/08fd33_4.mp4
 
-**Output Video:** !
+**Output Video:** https://github.com/Harshv140702/Yolo-Football-Analysis/blob/main/output/output_video.avi
 
 ## Methodology
 The detection phase employs the **YOLOv11 Large** model, which was fine-tuned using a dataset from **Roboflow** to improve accuracy in identifying players on the field. After detection, **KMeans clustering** is applied to differentiate players based on their jersey colors, allowing for team classification.
